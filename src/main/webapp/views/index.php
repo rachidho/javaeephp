@@ -9,6 +9,8 @@
 	{
 		return function_exists ("quercus_version");
 	}
+	
+	echo "wamal hadech";
 ?>
 </head>
 <body>
