@@ -26,7 +26,7 @@ Test instance de la class personne
 </p>
 <?php
 	//importation du paquetage Java
-	import  com.javaee.php.entite.Personne;
+	import  com.javaee.php.entites.Personne;
 	//instanciation de la classe
 	$pojo=new Personne();
 	//declenchement de methodes
@@ -39,6 +39,12 @@ Test instance de la class personne
 	$calendar=Calendar::getInstance();
 	//afficher la valeur
 	echo ("<br/>".$calendar);
+	
+	
+	
+	import com.javaee.php.services.impl.EmployeeServiceImpl;
+	$pojo1=new EmployeeServiceImpl();
+	echo $pojo1->countListEmployee();
 ?>
 </body>
 </html>

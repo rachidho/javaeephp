@@ -1,7 +1,19 @@
 package com.javaee.php.entites;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="PERSONNE")
 public class Personne {
-	private int id;
+	@Id
+    @GeneratedValue
+    private Long id;
+	
+	@Column(name="nom")
 	private String nom;
 
 	public Personne()
@@ -12,10 +24,10 @@ public class Personne {
 	{
 		return "Bonjour "+this.id+" "+this.nom;	
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNom() {
@@ -24,5 +36,8 @@ public class Personne {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
+	
+	
 
 }
