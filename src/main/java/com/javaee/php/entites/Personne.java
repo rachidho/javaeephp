@@ -4,6 +4,7 @@ public class Personne {
 	private int id;
 	private String nom;
 
+	
 	public Personne()
 	{
 		System.out.println("Appel du constructeur");
